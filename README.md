@@ -1,2 +1,2 @@
 # bitcoin
-A "private" guide to learning bitcoin and the blockchain
+A "private" italian guide to learning bitcoin and the blockchain.
