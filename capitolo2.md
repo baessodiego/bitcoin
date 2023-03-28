@@ -32,4 +32,3 @@ Le persone / istituzioni incaricate a registrare le nostre attività possono:
 + **non essere affidabili**. _Per esempio potrebbero creare nel registro un falso trasferimento di proprietà_
 + **escludere enti che non approvano**. _Per esempio una banca potrebbe bloccare i bonifici che arrivano da un determinato business._
 + **perdere dati sensibili** in seguito ad attacchi informatici, problemi tecnici o disastri ambientali.
-
