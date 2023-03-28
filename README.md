@@ -1,4 +1,4 @@
-# bitcoin
+# Bitcoin self-guide
 A "private" italian guide to learning bitcoin and the blockchain.
 
 ## Indice
