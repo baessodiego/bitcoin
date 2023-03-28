@@ -1,6 +1,6 @@
-`...draft`
-
 # Perché Bitcoin?
+
+Prima di introdurre il concetto di Bitcoin è importante definire quali sono le proprietà e le funzioni di una valuta.
 
 ## Le 3 funzioni principali di una valùta
 
@@ -50,6 +50,8 @@ Non esiste un asset che abbia una perfetta riserva di valore, dato che non si pu
 
 ---
 
+Come ci siamo arrivati ad usare il denaro come lo conosciamo oggi? Un piccolo riassunto della storia della moneta può essere utile.
+
 ## Dal baratto al Bitcoin
 
 ### **Cosa usare per lo scambio di beni e servizi?**
@@ -68,15 +70,16 @@ Il problema è che queste cose avevano una scarsa trasportabilità e durabilià.
 
 Si risolse così il problema della trasportabilità e della durevolezza ma si andò incontro al problema legato alla divisibilità, alla fungibilità (non tutte le monete erano perfettamente uguali) e all'autenticità (era difficile capire se il metallo utilizzato era prezioso o meno).
 
-Più avanti si cominciarono a usare monete e banconote senza un valore effettivo che però erano esclusivamente legate al valore di un metallo prezioso tenuto nelle prime banche (es. una banconota valeva una quantità X di oro, un'altra valva una quantità X di argento).
-
-[Approfondimento: Storia della moneta](https://en.wikipedia.org/wiki/History_of_coins)
+Più avanti si cominciarono a usare monete e banconote senza un valore effettivo che però erano esclusivamente legate al valore di un metallo prezioso tenuto nelle prime banche (es. una banconota valeva una quantità X di oro, che poteva essere riscattato nella propria banca).
 
 > IV soluzione: valute FIAT
 
 Le valute FIAT (quelle che si usano tutt'oggi in tutto il mondo) risolsero tutti i problemi precedenti.
 
 Le valute FIAT sono definite come _valuta_ dalla legge governativa di una nazione e non sono sostenute dal valore di un bene fisico (come l'oro).
+
+_Se sei interessato a conoscere più in dettaglio la storia della moneta puoi visitare questa pagina:
+[Approfondimento: Storia della moneta](https://en.wikipedia.org/wiki/History_of_coins)_
 
 ### **Chi tiene traccia delle transazioni?**
 
@@ -162,3 +165,5 @@ Messo a paragone con i mezzi di scambio del passato.
 + Fungibile: ogni BTC ha lo stesso valore. Oggi però ci sono dei registri in cui sono segnalati i BTC _sporchi_, cioè quelli usati e ricavati da attività illecite.
 + Divisibile: ogni BTC può essere diviso fino a 100 milioni di unità. La più piccola unità del bitcoin si chiama **satoshi**.
 + difficile da contraffare: ogni BTC è assegnato a un specifico indirizzo e questo può essere verifricato da tutti i nodi all'interno della blockchain.
+
+Nel [prossimo capitolo](/capitolo2.md) approfondiremo l'importanza del ledger e di come il creatore di Bitcoin, Satoshi Nakamoto, trovò il modo per renderlo decentralizzato.
