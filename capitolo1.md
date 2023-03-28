@@ -14,11 +14,11 @@ Prima di introdurre il concetto di Bitcoin è importante definire quali sono le 
 
 > Quali sono i punti chiave di un buon mezzo di scambio?
 
-- **Durabilità**: capacità della valuta nel durare nel tempo senza rovinarsi (es. le _monete_).
-- **Trasportabilità**: facilità del trasferimento della valuta (es. trasferimento di denaro _online_).
-- **Divisibilità**: può una valuta essere divisa? Come? In quante parti? (10€ possono essere divisi in 2 da 5€; 1€ in 100 centesimi...).
-- **Fungibilità**: il valore di una unità della valuta deve essere uguale al valore di una qualunque altra valuta dello stesso valore.
-- **Autenticità**: una valuta deve essere difficilmente contraffabile.
++ **Durabilità**: capacità della valuta nel durare nel tempo senza rovinarsi (es. le _monete_).
++ **Trasportabilità**: facilità del trasferimento della valuta (es. trasferimento di denaro _online_).
++ **Divisibilità**: può una valuta essere divisa? Come? In quante parti? (10€ possono essere divisi in 2 da 5€; 1€ in 100 centesimi...).
++ **Fungibilità**: il valore di una unità della valuta deve essere uguale al valore di una qualunque altra valuta dello stesso valore.
++ **Autenticità**: una valuta deve essere difficilmente contraffabile.
 
 ### 2. Unità di conto
 
@@ -28,7 +28,7 @@ _Se entro in un negozio per comprare un telefono, il prezzo di quest'ultimo sar�
 
 > Cosa rende buona un'unità di conto?
 
-- **Stabilità**: Nel breve-termine la valuta di ogni nazione è stabile, per ora più stabile delle cryptocurrencies.  
++ **Stabilità**: Nel breve-termine la valuta di ogni nazione è stabile, per ora più stabile delle cryptocurrencies.  
   Nel lungo termine ci sarà il problema dell'_inflazione_\*.  
   \* La valuta perde valore nel tempo quindi l'economia dovrà essere corretta in base all'aumento dell'inflazione.
 
@@ -39,14 +39,14 @@ Non esiste un asset che abbia una perfetta riserva di valore, dato che non si pu
 
 > Cosa spinge un asset a essere una riserva di valore?
 
-- L'aspettativa della domanda di quella risorsa nel futuro
-- L'aspettativa del supplemento / offerta di quella risorsa nel futuro
++ L'aspettativa della domanda di quella risorsa nel futuro
++ L'aspettativa del supplemento / offerta di quella risorsa nel futuro
 
 > Quali sono le migliori riserve di valore oggi?
 
-- Metalli (**Oro**, argento, diamanti)
-- Stocks, bonds, immobiliare
-- Riserve della valuta nazionale
++ Metalli (**Oro**, argento, diamanti)
++ Stocks, bonds, immobiliare
++ Riserve della valuta nazionale
 
 ---
 
@@ -93,7 +93,7 @@ La banca è un ente di terze parti sicuro che tiene traccia delle transazioni tr
 
 Grazie a questo registro si possono prevenire problemi come il _Double spending problem_.
 
-### Double spending problem
+### **Double spending problem**
 
 Esempio: Joe vuole inviare 10€ a Chris.
 
