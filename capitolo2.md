@@ -149,7 +149,7 @@ Cosa fa il miner:
 Quando si parla di _ricompensa_ ci si riferisce a dei bitcoin che riceverà il miner per aver speso tempo ed elettricità (tenere acceso un macchinario per il mining consuma più di 2kW/h).
 
 La ricompensa è composta da:
-+ il _block subsidy_, che fornisce BTC al network ogni volta che un blocco viene creato. Viene dimezzata ogni `210.000 blocchi` (~ 4 anni), per avere un decremento della fornitura di BTC; nel 2008 la ricompensa era di `50 BTC`, oggi è arrivata a `6.25 BTC` per blocco. ♦️
++ il _block subsidy_, che fornisce BTC al network ogni volta che un blocco viene creato. Viene dimezzata ogni `210.000 blocchi` (~ 4 anni), per avere un decremento della fornitura di BTC; nel 2008 la ricompensa era di `50 BTC`, oggi è arrivata a `6.25 BTC` per blocco ♦️. 
 + le _fees_, cioè le tasse che paga l'utente per inviare i propri bitcoin.
 
 ♦️ Nel 2140, quando si stima che ci saranno i 21M di bitcoin nel network, i miners riceveranno solo più le _fees_ come ricompensa. Oggi ci sono 18M di bitcoin (più dell'80% del totale fissato).
