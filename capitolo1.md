@@ -1,5 +1,11 @@
 # Perché Bitcoin?
 
+## Indice
+
++ [Le funzioni principali di una valuta](#le-3-funzioni-principali-di-una-valùta)
++ [Dal baratto al Bitcoin](#dal-baratto-al-bitcoin)
++ [Bitcoin come valuta](#bitcoin-come-valuta)
+
 Prima di introdurre il concetto di Bitcoin è importante definire quali sono le proprietà e le funzioni di una valuta.
 
 ## Le 3 funzioni principali di una valùta
