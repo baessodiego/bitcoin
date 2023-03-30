@@ -1,8 +1,5 @@
-# Bitcoin self-guide
+# Bitcoin self-guide for you
 A "private" italian guide to learning bitcoin and the blockchain.
-
-
-
 
 ## Indice
 + [Capitolo 1: Perchè Bitcoin](/capitolo1.md)
