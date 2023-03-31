@@ -153,3 +153,7 @@ Se 1 di queste pool raggiungesse il 51% di potere computazionale mondiale sarebb
 
 ### Proof of Stake (PoS)
 
+È un altro tipo di algoritmo che si basa sull'attribuzione di voti ai membri del network, che dipendno dal loro _successo_* nella blockchain.  
+\* migliorare ed avere un impatto positivo sulla blockchain.
+
+⚠️ Non ci sono i miners!
