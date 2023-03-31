@@ -6,10 +6,10 @@
 1. [Hashing](#hashing)
 2. [Block](#block)
 3. [Blockchain](#blockchain)
-4. [Network]()
-5. [Mempool]()
-6. [Consenso]()
-7. [Wallet (portafolio)]()
+4. [Network](#network)
+5. [Mempool](#memory-pool-mempool)
+6. [Consenso](#consenso)
+7. [Wallet (portafolio)](#wallet)
 8. [Signature (firma digitale)]()
 9. [Transazioni]()
 
@@ -98,7 +98,9 @@ Ci sono 3 principali tipi di consenso, usati in diversi tipi di blockchain:
 
 1. [Proof of Work](#proof-of-work-pow)
 2. [Proof of Stake](#proof-of-stake-pos)
-3. [Delegated Byzantine Fault Tolerance](#)
+3. [Delegated Byzantine Fault Tolerance](#delegated-byzantine-fault-tolerance-dbft)
+
+<br>
 
 ### Proof of Work (PoW)
 
@@ -151,9 +153,56 @@ Tutti i computer e le farm connesse h24 sparse nel mondo hanno un consumo di ene
 + **Possibilità di un miner di avere troppo potere (> 50%)**  
 Se 1 di queste pool raggiungesse il 51% di potere computazionale mondiale sarebbe un problema: quella pool avrebbe il potere di modificare i dati della blockchain a proprio piacimento, facenso saltare il processo del consenso.
 
+<br>
+
 ### Proof of Stake (PoS)
 
 È un altro tipo di algoritmo che si basa sull'attribuzione di voti ai membri del network, che dipendno dal loro _successo_* nella blockchain.  
 \* migliorare ed avere un impatto positivo sulla blockchain.
 
-⚠️ Non ci sono i miners!
+⚠️ Non ci sono i miners, ma ci sono i **_validators_**, cioè tutti coloro che _mettono in stake_ i propri coins per validare il blocco che verrà aggiunto alla blockchain.
+
+Maggiore sarà la quantità di coins in stake, maggiore sarà la probabilità di essere ricompensati per la creazione del blocco. Chi creerà il blocco verrà ricompensato con una percentuale proporzionale a quanto messo in stake.
+
+> Chi usa il PoS al momento?
+
+Le principali blockchain che usano il PoS sono:
+
++ **Ethereum**: è passato dal PoW al PoS tramite il [progetto Casper](https://academy.binance.com/it/articles/ethereum-casper-explained).
++ **Dash**: è il pioniere del PoS, creato sulla base di BTC.
++ **Lisk**: ha come obbiettivo la creazione di app decentralizzate ed usa il DPoS (Delegated Proof of Stake).
+
+<br>
+
+### Delegated Byzantine Fault Tolerance (DBFT)
+
+È un algoritmo basato sull'assegnazione di _ruoli_ ai nodi per la coordinazione del consenso.
+
+⚠️ Non ci sono i miners, ma i nodi sono divisi in:
+
++ **Nodi ordinari**
++ **Nodi di consenso**: cioè quelli che hanno il ruolo di validare i blocchi
+
+> Come fa un nodo ordinario a diventare un nodo di consenso?
+
+Ci sono vari criteri che dipendono dalla piattaforma, tra cui:
+
++ determinate connessioni internet
++ un determinato equipaggiamento tecnologico
++ avere un minimo di monete in stake nel network
+
+I nodi di consenso si divido nuovamente in 2 sottogruppi:
+
++ **Speakers**: quelli che creano il blocco e lo propongono ai delegates.
++ **Delegates**: quelli che approvano il blocco, almeno il 66% dei delegati devono essere d'accordo.
+
+Se lo speaker corrente non ottiene il 66% dell'approvazione, diventa un delegato e un altro delegato verrà scelto per diventare il nuovo speaker.  In questo sistema tutti hanno la possibilità di diventare nodi di consenso, speaker e delegate.
+
+DBFT è piu veloce del PoW, ma è meno sicuro.
+
+Una piattaforma che usa questo algoritmo di consenso è **NEO**.
+
+<br>
+
+## **Wallet**
+
