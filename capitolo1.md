@@ -173,3 +173,9 @@ Messo a paragone con i mezzi di scambio del passato.
 + difficile da contraffare: ogni BTC è assegnato a un specifico indirizzo e questo può essere verifricato da tutti i nodi all'interno della blockchain.
 
 Nel [prossimo capitolo](/capitolo2.md) approfondiremo l'importanza del ledger e di come il creatore di Bitcoin, Satoshi Nakamoto, trovò il modo per renderlo decentralizzato.
+
+---
+
+<br>
+
+[⬅️ Torna all'indice](/README.md) | [Capitolo Successivo ➡️](/capitolo2.md)

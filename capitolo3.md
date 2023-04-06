@@ -1,5 +1,8 @@
 # Le basi di una cryptocurrency
 
+In questo capitolo vedremo gli aspetti principali di una cryptocurrency, mantenendo il focus sul bitcoin.
+
+Ogni approfondimento di questi punti verrà discusso nei capitoli successivi.
 
 ## Indice
 
@@ -10,8 +13,8 @@
 5. [Mempool](#memory-pool-mempool)
 6. [Consenso](#consenso)
 7. [Wallet (portafolio)](#wallet)
-8. [Signature (firma digitale)]()
-9. [Transazioni]()
+8. [Signature (firma digitale)](#signature)
+9. [Transazioni](#transazioni)
 
 <br>
 
@@ -206,3 +209,96 @@ Una piattaforma che usa questo algoritmo di consenso è **NEO**.
 
 ## **Wallet**
 
+**Wallet Address** è un identificatore unico per il tuo wallet; per ottenerlo servono 2 chiavi, una pubblica e una privata.
+
+### Chiave privata (Secret Key)
+
+È un numero _casuale_ che permette di scambiare bitcoins dal tuo indirizzo wallet.
+
+Un wallet può avere più di una chiave privata.  
+La chiave privata viene usata per generare le firme digitale, confermare la proprietà di un wallet e autorizzare la propria transazione nella blockchain.
+
+### Chiave pubblica (Public Key)
+
+Viene creata dalla chiave privata con l'utilizzo della _crittografia a curva ellittica_. Quando si spendono e ricevono bitcoin, la chiave pubblica è rappresentata dall'indirizzo wallet.
+
+L'algoritmo utilizzato è denominato con **ECDSA** (Elliptic Curve Digital Signature Algorithm). Con questo algoritmo è impossibile tornare indietro, al valore non ancora crittografato.
+
+### Indirizzo Bitcoin (Bitcoin Address)
+
+È un identificatore (unico) della destinazione dei pagamenti in bitcoin, generato dalla chiave pubblica.
+
+È generalmente generato usando le funzioni di hash **SHA256** e **RIPEMD-160** in serie sulla chiave pubblica.
+
+Questa serie di caratteri viene poi codificata usando la codificazione **Base58** per renderlo più leggibile.  
+58 sono i caratteri alfanumerici di questa codificazione.
+
+> Perchè 58?
+
+Ci sono 52 caratteri nell'alfabeto (26 maiuscoli e 26 minuscoli) + 10 numeri (da 0 a 9).
+Di questi 62, Satoshi ne rimosse 4 per non confondere numeri e lettere, cioè: la lettera 'O' e il numero `0`, la lettera maiuscola 'I' (i) e la lettera minuscola 'l' (elle).
+
+> RECAP Algoritmi
+
+Chiave Privata: `C4bbcb1fbec99d65bf59d85c8cb62ee2db963f0fe106f483d9 afa73bd4e39a8a`
+
+⚙️ _ECDSA_ (Chiave privata)
+
+Chiave Pubblica:
+`0478d430274f8c5ec1321338151e927f4c676a008bdf8638d07c0b6be9ab35c71a1518063243acd4dfe96b66e3f2ec8013c8e072cd09b3834a1981659cc345`
+
+⚙️ _RIPEMD-160_ (_SHA256_ (Chiave pubblica))
+
+Indirizzo:
+`c4c5d791fcb4654a1ef5e03fe0ad3d9c598f9827`
+
+⚙️ _Base58_ (Indirizzo)
+
+Indirizzo wallet:
+`1JwSSubhmg6iPtRityqhUYYH7bZq3Lfy1T`
+
+<br>
+
+## **Firme Digitali (Signature)**
+
+Vedremo cosa sono e a che cosa servono le firme digitali nel [capitolo successivo](/capitolo4.md#crittografia-transazioni-e-mining) poichè è un argomento più complicato da discutere.
+
+<br>
+
+## **Transazioni**
+
+È una struttura dati che codifica e trasferisce un valore (come dei BTC) da una sorgente di fondi (input) ad una destinazione (output).
+
+Questa è una comune transazione: 1 input e 2 output.
+
+![transazione](/img/transazione-1input2output.png)
+
+Tutti gli input fanno riferimento ad un output di una transazione precedente.
+
+Gli inputs sono chiamati **UTXO** (Unspent transaction output) ed arrivano da un'altra transazione.
+
+Il wallet fa riferimento a un certo numero di UTXO in uno o più blocchi all'interno della blockchain. I tuoi coins non sono quindi "fisicamente" nel tuo wallet, ma sono dei riferimenti a degli UTXO.
+
+⚠️ Gli UTXO non sono divisibili, quindi se decido di inviare una piccola parte di coins del mio wallet, questo non sarà sempre possibile. *
+
+\* Come vediamo dall'immagine, in input c'è un UTXO di valore `0.01210048 BTC` che viene completamente inviato al secondo wallet. I 2 output sono:
+
++ `0.00324472`, cioè il valore effettivamente stabilito dall'utente che ha inviato i BTC.
++ `0.00883038`, cioè il **resto** che verrà nuovamente inviato allo stesso indirizzo che si trova nell'input.
+
+Nelle transazioni ci sono le **FEES**, cioè la quantità di BTC da pagare al miner per la creazione del blocco.
+
+```
+Fees = Somma degli input - Somma degli output
+```
+
+Nella transazione che si vede nell'immagine, le fees si calcoleranno così:  
+`341.06$ - (91.45$ + 248.89$) = 0.72$`
+
+---
+
+Questa era un'infarinatura generale sulle cryptocurrencies. Nei prossimi capitoli vedremo in dettaglio i punti affrontati precedentemente.
+
+<br>
+
+[⬅️ Capitolo Precedente](/capitolo2.md) | [Capitolo Successivo ➡️](/capitolo4.md)

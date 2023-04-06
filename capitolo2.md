@@ -166,3 +166,8 @@ Il blocco che viene scartato diventa _orfano_ e le transazioni al suo interno do
 
 Perché ciò che sta alla base della blockchain e del suo consenso è la **sicurezza**: l'investimento di potenza computazionale, tempo ed energia aumenta la sicurezza di tutto il sistema! Ad un miner non conviene creare un blocco con informazioni false, perché non verrebbe accettato dal network e quindi consumerebbe energia inutilmente ($$$).
 
+---
+
+<br>
+
+[⬅️ Capitolo Precedente](/capitolo1.md) | [Capitolo Successivo ➡️](/capitolo3.md)
