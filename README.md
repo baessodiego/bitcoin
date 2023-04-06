@@ -1,6 +1,8 @@
 # Bitcoin self-guide for you
 A "private" italian guide to learning bitcoin and the blockchain.
 
+![copertina](/img/bitcoin-blue.png)
+
 ## Indice   
 + [Timeline di BTC: gli avvenimenti più importanti dal 2008](/btc-timeline.md)
 + [Capitolo 1: Perchè Bitcoin](/capitolo1.md)
