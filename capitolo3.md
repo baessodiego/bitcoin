@@ -16,6 +16,8 @@ Ogni approfondimento di questi punti verrà discusso nei capitoli successivi.
 8. [Signature (firma digitale)](#signature)
 9. [Transazioni](#transazioni)
 
+---
+
 <br>
 
 
@@ -230,32 +232,7 @@ L'algoritmo utilizzato è denominato con **ECDSA** (Elliptic Curve Digital Signa
 
 È generalmente generato usando le funzioni di hash **SHA256** e **RIPEMD-160** in serie sulla chiave pubblica.
 
-Questa serie di caratteri viene poi codificata usando la codificazione **Base58** per renderlo più leggibile.  
-58 sono i caratteri alfanumerici di questa codificazione.
-
-> Perchè 58?
-
-Ci sono 52 caratteri nell'alfabeto (26 maiuscoli e 26 minuscoli) + 10 numeri (da 0 a 9).
-Di questi 62, Satoshi ne rimosse 4 per non confondere numeri e lettere, cioè: la lettera 'O' e il numero `0`, la lettera maiuscola 'I' (i) e la lettera minuscola 'l' (elle).
-
-> RECAP Algoritmi
-
-Chiave Privata: `C4bbcb1fbec99d65bf59d85c8cb62ee2db963f0fe106f483d9 afa73bd4e39a8a`
-
-⚙️ _ECDSA_ (Chiave privata)
-
-Chiave Pubblica:
-`0478d430274f8c5ec1321338151e927f4c676a008bdf8638d07c0b6be9ab35c71a1518063243acd4dfe96b66e3f2ec8013c8e072cd09b3834a1981659cc345`
-
-⚙️ _RIPEMD-160_ (_SHA256_ (Chiave pubblica))
-
-Indirizzo:
-`c4c5d791fcb4654a1ef5e03fe0ad3d9c598f9827`
-
-⚙️ _Base58_ (Indirizzo)
-
-Indirizzo wallet:
-`1JwSSubhmg6iPtRityqhUYYH7bZq3Lfy1T`
+Approfondimento nel [capitolo successivo](/capitolo4.md#indirizzo-bitcoin)
 
 <br>
 

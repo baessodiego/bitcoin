@@ -8,6 +8,10 @@
 + [Il Byzantine Generals' Problem](#byzantine-generals-problem)
 + [L'approccio di BTC al BGP](#lapproccio-di-bitcoin-al-bgp)
 
+---
+
+<br>
+
 ## Prima di iniziare, alcune utili definizioni: 
 
 + **Ledger**: registro completo dell'attività di un business o di un individuo, solitamente traccia i trasferimenti di denaro e certificati di proprietà di beni.
