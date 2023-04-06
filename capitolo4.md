@@ -80,13 +80,13 @@ L'hash generato da SHA-256 è solitamente rappresentato da una stringa di 64 car
 [Prova tu a crittografare la parola "Bitcoin" con SHA256](https://emn178.github.io/online-tools/sha256.html).  
 Ricorda che i caratteri maiuscoli non generano lo stesso risultato dei minuscoli!
 
-```
+```js
 # SHA256 (sha256sum)
 
-Bitcoin = b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4
+Bitcoin = "b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4"
 
 bitcoin = 
-6b88c087247aa2f07ee1c5956b8e1a9f4c7f892a70e324f1bb3d161e05ca107b
+"6b88c087247aa2f07ee1c5956b8e1a9f4c7f892a70e324f1bb3d161e05ca107b"
 ```
 
 ## Crittografia asimmetrica
