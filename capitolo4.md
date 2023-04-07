@@ -137,15 +137,17 @@ La verifica della firma digitale nella blockchain di Bitcoin è un processo crit
 ### **Firmare una transazione `T`**
 
 1. La transazione `T` viene creata.
-2. Si selezionano delle informazioni `M` riguardo alla transazione `T`, come l'ID della transazione, le istruzioni riguardo al trasferimento ecc...
+2. Si selezionano delle informazioni `M` riguardo alla transazione `T`, come l'ID della transazione, le istruzioni riguardo al trasferimento ecc... `M` sta per "messaggio della transazione".
 3. Si calcola l'hash `H` delle informazioni `M` (`H = SHA256(M)`).
 4. Si calcola la firma digitale `S` usando l'output di una funzione di hash `Fhash` usando come parametro la chiave privata `Kpriv` del mittente.
-5. Si manda ai _miners_ sia la firma `S` che la chiave pubblica `Kpub` insieme alla transazione `T`.
+5. Si mandano al network (in particolare ai _miners_) la firma `S`, la chiave pubblica `Kpub` e le informazioni `M`.
 
 $\ S = Fsign(Fhash(M), Kpriv) $
 
-$Fhash$ = funzione che calcola l'hash `H` delle informazioni `M`;
+$Fhash$ = funzione che calcola l'hash `H` delle informazioni `M`;  
 $Fsign$ = funzione per firmare con parametri `(H, Kpriv)` che produrrà i valori `R` ed `S`;
+
+![firmare transazione](/img/creazione-firma.jpeg)
 
 ### **Verificare una transazione `T`**
 
@@ -153,3 +155,15 @@ La verifica non è altro che la funzione inversa della firma.
 Per verificare una transazione bisognerà avere la _firma digitale_ (con i valori `R` ed `S`) e la _chiave pubblica_ per trovare il punto `P`, che è un punto che si trova sulla curva ellittica.
 
 $\ P = (S^{-1} \times Fhash(M) \times G) + (S^{-1} \times R \times Kpub)$
+
++ `R` e `S` sono i valori della firma digitale
++ `Kpub` è la chiave pubblica
++ `M` è l'insieme di informazioni (firmate) della transazione
++ `G` è il _punto generatore_, un punto specifico sulla curva ellittica che viene scelto in modo tale da essere facilmente calcolabile e conosciuto da tutti i partecipanti della rete Bitcoin. 
+
+In conclusione, se la coordinata $\ x\ $ del punto `P` appena calcolato è uguale a `R`, allora possiamo veriricare che la firma digitale è valida.
+
+⚠️ In questo processo la chiave privata rimane segreta e NON viene rivelata.
+
+
+![validazione transazione](/img/validazione-firma.jpeg)
