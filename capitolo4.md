@@ -115,7 +115,7 @@ M = decrypt(C, Kpriv);
 
 Questo tipo di crittografia, a chiave pubblica, viene usato in Bitcoin per generare le firme digitali tramite la crittografia ellittica (ECDSA), nello specifico la curva [secp256k1](https://en.bitcoin.it/wiki/Secp256k1).
 
-In Bitcoin: 
+In Bitcoin:
 
 1. La **chiave privata**, tenuta segreta dal proprietario, viene usata per _firmare_ un' hash di una transazione che autorizza l'invio delle monete che possiede.
 
@@ -123,21 +123,38 @@ In Bitcoin:
 
 ## Firme digitali (digital signatures)
 
-+ Usate per autenticare le transazioni valide.
-+ Per effettuare un pagamento, viene generata una transazione `T`.
-+ Un sottoinsieme delle informazioni `M` della transazione `T` viene _firmato_.
+In questo paragrafo parleremo delle firme digitali di tipo ECDSA (crittografia ellittica).
+
+Quando un utente effettua una transazione in Bitcoin, questa viene firmata digitalmente utilizzando la chiave privata dell'utente. La firma digitale viene poi trasmessa insieme alla transazione sulla rete Bitcoin.
+
+Una volta che la transazione viene inclusa in un blocco e aggiunta alla blockchain, gli altri nodi della rete Bitcoin utilizzano la chiave pubblica dell'utente per verificare la firma digitale della transazione. In questo modo, gli altri nodi possono confermare che la transazione è stata effettivamente autorizzata dall'utente che possiede la chiave privata corrispondente alla chiave pubblica utilizzata per firmare la transazione.
+
+La verifica della firma digitale nella blockchain di Bitcoin è un processo critico per garantire l'integrità e la sicurezza della rete. Poiché la blockchain di Bitcoin è immutabile, una volta che una transazione è stata confermata e aggiunta alla blockchain, non può essere modificata o annullata.
+
+- Per effettuare un pagamento, viene generata una transazione `T`.
+- Un sottoinsieme delle informazioni `M` della transazione `T` viene _firmato_.
 
 ### **Firmare una transazione `T`**
 
-1. La transazione `T`viene creata.
+1. La transazione `T` viene creata.
 2. Si selezionano delle informazioni `M` riguardo alla transazione `T`, come l'ID della transazione, le istruzioni riguardo al trasferimento ecc...
 3. Si calcola l'hash `H` delle informazioni `M` (`H = SHA256(M)`).
 4. Si calcola la firma digitale `S` usando l'output di una funzione di hash `Fhash` usando come parametro la chiave privata `Kpriv` del mittente.
 5. Si manda ai _miners_ sia la firma `S` che la chiave pubblica `Kpub` insieme alla transazione `T`.
 
 ```js
-S = Fsign(Fhash(M), Kpriv)
+S = Fsign(Fhash(M), Kpriv);
 
-Fhash = "funzione che calcola l'hash H delle informazioni M"
-Fsign = "funzione per firmare con parametri (H, Kpriv)"
+Fhash = "funzione che calcola l'hash H delle informazioni M";
+Fsign =
+  'funzione per firmare con parametri (H, Kpriv) che produrrà i valori R ed S';
+```
+
+### **Verificare una transazione `T`**
+
+La verifica non è altro che la funzione inversa della firma.  
+Per verificare una transazione bisognerà avere la _firma digitale_ (con i valori `R` ed `S`) e la _chiave pubblica_ per trovare il punto `P`, che è un punto che si trova sulla curva ellittica.
+S^-1^
+```js
+P = S^-1^
 ```
