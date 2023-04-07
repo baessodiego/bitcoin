@@ -152,6 +152,4 @@ $Fsign$ = funzione per firmare con parametri `(H, Kpriv)` che produrrà i valori
 La verifica non è altro che la funzione inversa della firma.  
 Per verificare una transazione bisognerà avere la _firma digitale_ (con i valori `R` ed `S`) e la _chiave pubblica_ per trovare il punto `P`, che è un punto che si trova sulla curva ellittica.
 
-$
-P = (S^{-1} \times Fhash(M) \times G) + (S^{-1} \times R \times Kpub)
-$
+$\ P = (S^{-1} \times Fhash(M) \times G) + (S^{-1} \times R \times Kpub)$
