@@ -142,7 +142,7 @@ La verifica della firma digitale nella blockchain di Bitcoin è un processo crit
 4. Si calcola la firma digitale `S` usando l'output di una funzione di hash `Fhash` usando come parametro la chiave privata `Kpriv` del mittente.
 5. Si manda ai _miners_ sia la firma `S` che la chiave pubblica `Kpub` insieme alla transazione `T`.
 
-$ S = Fsign(Fhash(M), Kpriv) $
+$\ S = Fsign(Fhash(M), Kpriv) $
 
 $Fhash$ = funzione che calcola l'hash `H` delle informazioni `M`;
 $Fsign$ = funzione per firmare con parametri `(H, Kpriv)` che produrrà i valori `R` ed `S`;
