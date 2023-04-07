@@ -107,7 +107,7 @@ Ci sono 3 principali tipi di consenso, usati in diversi tipi di blockchain:
 
 <br>
 
-### Proof of Work (PoW)
+### **Proof of Work (PoW)**
 
 È un sistema in cui le informazioni, nel nostro caso i blocchi, sono costose da produrre (_work_) ma facili da verificare (_proof_).
 
@@ -160,7 +160,7 @@ Se 1 di queste pool raggiungesse il 51% di potere computazionale mondiale sarebb
 
 <br>
 
-### Proof of Stake (PoS)
+### **Proof of Stake (PoS)**
 
 È un altro tipo di algoritmo che si basa sull'attribuzione di voti ai membri del network, che dipendno dal loro _successo_* nella blockchain.  
 \* migliorare ed avere un impatto positivo sulla blockchain.
@@ -179,7 +179,7 @@ Le principali blockchain che usano il PoS sono:
 
 <br>
 
-### Delegated Byzantine Fault Tolerance (DBFT)
+### **Delegated Byzantine Fault Tolerance (DBFT)**
 
 È un algoritmo basato sull'assegnazione di _ruoli_ ai nodi per la coordinazione del consenso.
 
@@ -213,20 +213,20 @@ Una piattaforma che usa questo algoritmo di consenso è **NEO**.
 
 **Wallet Address** è un identificatore unico per il tuo wallet; per ottenerlo servono 2 chiavi, una pubblica e una privata.
 
-### Chiave privata (Secret Key)
+### **Chiave privata (Secret Key)**
 
 È un numero _casuale_ che permette di scambiare bitcoins dal tuo indirizzo wallet.
 
 Un wallet può avere più di una chiave privata.  
 La chiave privata viene usata per generare le firme digitale, confermare la proprietà di un wallet e autorizzare la propria transazione nella blockchain.
 
-### Chiave pubblica (Public Key)
+### **Chiave pubblica (Public Key)**
 
 Viene creata dalla chiave privata con l'utilizzo della _crittografia a curva ellittica_. Quando si spendono e ricevono bitcoin, la chiave pubblica è rappresentata dall'indirizzo wallet.
 
 L'algoritmo utilizzato è denominato con **ECDSA** (Elliptic Curve Digital Signature Algorithm). Con questo algoritmo è impossibile tornare indietro, al valore non ancora crittografato.
 
-### Indirizzo Bitcoin (Bitcoin Address)
+### **Indirizzo Bitcoin (Bitcoin Address)**
 
 È un identificatore (unico) della destinazione dei pagamenti in bitcoin, generato dalla chiave pubblica.
 

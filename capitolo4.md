@@ -6,12 +6,13 @@
 2. [Funzioni di hash](#funzioni-di-hash)
 3. [Crittografia asimmetrica o "a chiave pubblica"](#crittografia-asimmetrica)
 4. [Firme digitali](#firme-digitali-digital-signatures)
+4. [Transazioni](#transazioni)
 
 ---
 
 <br>
 
-## Crittografia
+## **Crittografia**
 
 L'ecosistema di Bitcoin usa una coppia di chiavi digitali _privata-pubblica_ (relazionate matematicamente), create usando la crittografia ellittica (**ECDSA**: [Elliptic Curve Digital Signature Algorithm](https://it.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)).
 
@@ -68,9 +69,24 @@ Quando una transazione viene condivisa con il network, la funzione SHA-256 viene
 
 Le funzioni di hash vengono utilizzate anche nella blockchain per verificare l'integrità dei blocchi e per stabilire l'ordine cronologico di ogni singolo blocco.
 
+Nella maggior parte dei casi sia la chiave privata che la chiave pubblica sono contenute nel wallet.
+
+![chiave privata e pubblica](/img/chiaveprivata-terminal.jpeg)
+
+La chiave privata collegata alla chiave pubblica (e quindi all'indirizzo BTC) è:
+`L3nzYUMrpMua59tqgnR7Gk37nvr5458auGzXRWQnUWY5fuZCu6ab`
+
+La chiave pubblica (indirizzo bitcoin) è:
+`1aavsnddTKS3fWFiW83tOVWqHCZY+pFAd`
+
 <br>
 
-## Funzioni di hash
+---
+
+<br>
+
+
+## **Funzioni di hash**
 
 Abbiamo imparato che Bitcoin usa SHA-256 come funzione di hash.  
 L'output di questa funzione è lunga 256 bits (32 bytes). \*
@@ -90,7 +106,13 @@ Bitcoin = b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4
 bitcoin = 6b88c087247aa2f07ee1c5956b8e1a9f4c7f892a70e324f1bb3d161e05ca107b
 ```
 
-## Crittografia asimmetrica
+<br>
+
+---
+
+<br>
+
+## **Crittografia asimmetrica**
 
 La crittografia asimmetrica, anche conosciuta come crittografia a chiave pubblica, viene usata per condividere le informazioni tramite una coppia di chiavi.
 
@@ -121,7 +143,13 @@ In Bitcoin:
 
 2. La **chiave pubblica**, visibile da tutti una volta che le monete verranno inviate/spese, viene usata per _verificare_ che la corrispondente chiave privata è stata usata per generare la transazione.
 
-## Firme digitali (digital signatures)
+<br>
+
+---
+
+<br>
+
+## **Firme digitali (digital signatures)**
 
 In questo paragrafo parleremo delle firme digitali di tipo ECDSA (crittografia ellittica).
 
@@ -167,3 +195,62 @@ In conclusione, se la coordinata $\ x\ $ del punto `P` appena calcolato è ugual
 
 
 ![validazione transazione](/img/validazione-firma.jpeg)
+
+<br>
+
+---
+
+<br>
+
+## **Transazioni**
+
+### **P2P e nodi**
+
++ Bitcoin viene eseguito su un network **peer-to-peer** (P2P) di computer.  
++ Gli utenti posseggono delle chiavi digitali che controllano la proprietà dei bitcoins registrati nella blockchain.
++ Ogni computer all'interno del network viene chiamato **nodo**.  
+
+> Come si diventa un nodo?
+
+Chiunque può diventare un _nodo_ scaricando ed installando il software _open-source_ di Bitcoin.
+
++ Tutti i nodi sono trattati alla stessa maniera, nel sistema nessun nodo può avere la fiducia da solo. La maggioranza dei nodi saranno etichettati come quelli _onesti_, come abbiamo visto dal [Byzantine Generals' Problem](/capitolo2.md#byzantine-generals-problem).  
+
+Ci sono 3 tipi di nodi all'interno del network:
+
++ **Full node**: è responsabile di verificare e mantenere i registri di proprietà secondo le regole del consenso.
++ **Mining node**: questo nodo si occupa di processare le transazioni e aggiungere nuovi blocchi alla blockchain, in cambio di una ricompensa.
++ **Pruned node**: verifica le transazioni e i blocchi ma non conserva l'intera copia della blockchain sul proprio computer, al contrario del full node.
+
+Le transazioni vengono registrati nella blockchain e descrivono il passaggio di proprietà di una quantità di bitcoin da un proprietario all'altro.
+
+<br>
+
+### **Indirizzi Bitcoin**
+
+Un indirizzo Bitcoin ha questo aspetto:
+
+```
+1FWQiwK27EnGXb6BiBMRLJvunJQZZPMcGd
+```
+
+Le transazioni nella blockchain non registrano le chiavi pubbliche ma invece un astrazione chiamata **_Indirizzo Bitcoin_** (Bitcoin address) per registrare il beneficiario di ciascun importo, consentendo una maggiore flessibilità e leggibilità.
+
+Per creare un indirizzo bitcoin, il client Bitcoin deve prima generare una coppia di di chiavi (pubblica-privata) da un numero casuale, usando la crittografia ellittica ECDSA.
+
+Creazione di un indirizzo:
+
+1. Vengono applicate le funzioni di hash SHA256 e RIPEMD-160 in serie sulla chiave pubblica per generare la `keyHash`.
+2. Concatenando `keyHash` e il numero di versione si compone il `data`.
+3. Applicando 2 volte di fila la funzione di hash SHA256 sul `data` si genera il `dataHash`.
+4. Da quest'ultimo si prendono i primi 4 bytes che verranno usati come `checksum`.
+5. L'indirizzo Bitcoin sarà la concatenazione del `data` e del `checksum` codificata in _Base58_.
+
+![schema creazione indirizzo btc](/img/creazione-indirizzo-btc.jpeg)
+
+
+---
+
+<br>
+
+[⬅️ Capitolo Precedente](/capitolo3.md) | [Capitolo Successivo ➡️](/capitolo5.md)

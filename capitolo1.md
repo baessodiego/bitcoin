@@ -58,7 +58,12 @@ Non esiste un asset che abbia una perfetta riserva di valore, dato che non si pu
 + Stocks, bonds, immobiliare
 + Riserve della valuta nazionale
 
+<br>
+
 ---
+
+<br>
+
 
 Come ci siamo arrivati ad usare il denaro come lo conosciamo oggi? Un piccolo riassunto della storia della moneta può essere utile.
 
@@ -133,7 +138,12 @@ I principali problemi che si hanno con le banche sono 2:
 + **Tempo**: il tempo totale della transazione dipende al 100% dalle banche di Joe e di Chris.
 + **Tracciabilità**: non è sempre facile tenere traccia delle transazioni, che potrebbero venire manomesse.
 
+<br>
+
 ---
+
+<br>
+
 
 ## Bitcoin come valuta?
 

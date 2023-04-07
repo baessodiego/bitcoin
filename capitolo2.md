@@ -12,6 +12,7 @@
 
 <br>
 
+
 ## Prima di iniziare, alcune utili definizioni: 
 
 + **Ledger**: registro completo dell'attività di un business o di un individuo, solitamente traccia i trasferimenti di denaro e certificati di proprietà di beni.
@@ -28,9 +29,14 @@ Stringa codificata in SHA256: `b133a0c0e9bee3be20163d2ad31d6248db292aa6dcb1ee087
 
 Prova tu: [SHA256 Converter](https://emn178.github.io/online-tools/sha256.html)
 
+<br>
+
 ---
 
-## Il ruolo del ledger
+<br>
+
+
+## **Il ruolo del ledger**
 
 Il ledger, o registro, è usato per registrare e tenere traccia di tutte le attività economiche, come il trasferimento di denaro, il passaggio di proprietà, ecc...
 
@@ -67,7 +73,12 @@ I tre principali vantaggi di un ledger decentralizzato:
 + invulnerabilità a possibili **atti illeciti** da parte di un ente incaricato al registrare dati.
 + invulnerabilità alla **perdita di dati**. I registri sono salvati e condivisi su una grande rete di computer: se ci dovessero essere problemi tecnici su uno di questi computer, ci sarebbe il backup salvato sugli altri.
 
+<br>
+
 ---
+
+<br>
+
 
 Problema con i ledger decentralizzati:
 
@@ -77,7 +88,7 @@ Il modello a cui si ispira la Blockchain di Bitcoin è stato ricavato dal _Byzan
 (Problema dei generali bizantini)
 
 
-## Byzantine Generals' Problem
+## **Byzantine Generals' Problem**
 
 L'idea che sta alla base del _consenso_ è data da questo problema, abbreviato BGP, proposto da Marshall Pease, Robert, Shostak e Leslie Lamport nel 1982.  
 
@@ -91,9 +102,13 @@ Una soluzione proposta è quella del consenso che sta dietro alla blockchain di 
 
 Ad oggi è la migliore soluzione al BGP mai proposta ed è quella attualmente utilizzata.
 
+<br>
+
 ---
 
-## L'approccio di Bitcoin al BGP
+<br>
+
+## **L'approccio di Bitcoin al BGP**
 
 Prima di iniziare, alcune utili definizioni: 
 
