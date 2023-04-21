@@ -3,7 +3,7 @@ A guide written in Italian to learn Bitcoin and the blockchain.
 
 Author: [Diego Baesso](https://www.diegobaesso.com/)
 
-![copertina](/img/bitcoin-blue.png)
+![copertina](/img/copertina.png)
 
 ## Indice   
 + [Timeline di BTC: gli avvenimenti più importanti dal 2008](/btc-timeline.md)
