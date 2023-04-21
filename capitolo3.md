@@ -111,7 +111,9 @@ Ci sono 3 principali tipi di consenso, usati in diversi tipi di blockchain:
 
 È un sistema in cui le informazioni, nel nostro caso i blocchi, sono costose da produrre (_work_) ma facili da verificare (_proof_).
 
-I miners devono disporre di molta potenza computazionale per trovare l'esatto valore numerico, chiamato _nonce_, per avere come risultato l'esatto numero di _zeri_ all'inizio dell'hash del blocco stabilito dal network.
+I miners devono disporre di molta potenza computazionale per trovare l'esatto valore numerico, chiamato [nonce](#block). Questo numero, aggiunto alle informazioni del blocco e "passato" in una funzione di hash, deve avere come risultato un hash con un minimo numero di _zeri_ (stabilito dal network) all'inizio.
+
+Vediamo un esempio
 
 ```
 L'hash del blocco n. 783,349 è:
@@ -248,7 +250,7 @@ Vedremo cosa sono e a che cosa servono le firme digitali nel [capitolo successiv
 
 Questa è una comune transazione: 1 input e 2 output.
 
-![transazione](/img/transazione-1input2output.png)
+![transazione](/img/cap3/transazione-1input2output.png)
 
 Tutti gli input fanno riferimento ad un output di una transazione precedente.
 
