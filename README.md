@@ -1,5 +1,7 @@
-# Bitcoin self-guide for you
-A "private" italian guide to learning bitcoin and the blockchain.
+# Bitcoin guide for beginners
+A guide written in Italian to learn Bitcoin and the blockchain.
+
+Author: [Diego Baesso](https://www.diegobaesso.com/)
 
 ![copertina](/img/bitcoin-blue.png)
 
