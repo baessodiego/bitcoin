@@ -126,14 +126,14 @@ Le nuove features di Ethereum sono:
 - Un linguaggio di programmazione ad oggetti chiamato Solidity per facilitare la creazione delle applicazioni decentralizzate e degli smart contracts.
 - La sua valuta nativa chiamata _ether_ che può essere tracciata all'interno della blockchain ed è usata più come _fuel_ per fare transazioni che come valuta.
 
-### Caratteristiche della blockchain di Ethereum
+### **Caratteristiche della blockchain di Ethereum**
 
 - Con il _genesis block_ nel 2015, sono stati generati `72 milioni` di ETH. Ad oggi ci sono `120 milioni` di ETH in circolazione e non esiste un tetto massimo come per Bitcoin.
 - La capitalizzazione di mercato di ETH supera i `200$ miliardi`, marzo 2023.
 - Il tempo di generazione di un blocco è di `~13 secondi`.
 - I nodi devono validare più informazioni rispetto ai soli pagamenti (come per Bitcoin). Il peso di un blocco è mediamente di `100KB (kilobytes)`. Nel 2020 era di soli 30KB.
 
-### I più importanti aggiornamenti di Ethereum
+### **I più importanti aggiornamenti di Ethereum**
 
 - **Frontier** `30 Luglio 2015`
 - **Homestead** `15 Marzo 2016`
@@ -141,7 +141,19 @@ Le nuove features di Ethereum sono:
 - **Istanbul** `8 Dicembre 2019`
 - **Serenity** `1 Dicembre 2020`
 
+<br>
 
+### **Smart Contracts**
 
+Gli **smart contracts**, quando si parla di Ethereum, sono dei _programmi informatici che utilizzano la tecnologia blockchain di Ethereum per eseguire automaticamente le clausole di un contratto._
 
+In pratica, gli smart contracts di Ethereum sono codici informatici che definiscono le regole e le condizioni di un accordo tra due parti, come una transazione finanziaria o una fornitura di beni o servizi. Una volta che le parti hanno definito i termini del contratto, questi vengono codificati in un linguaggio di programmazione specifico e caricati sulla blockchain di Ethereum.
 
+Una volta caricati sulla blockchain, gli smart contracts di Ethereum sono eseguiti automaticamente quando vengono soddisfatte le condizioni stabilite. In questo modo, gli smart contracts eliminano la necessità di intermediari come avvocati o istituzioni finanziarie.
+
+Gli smart contracts di Ethereum sono stati utilizzati per una vasta gamma di applicazioni, tra cui la creazione di monete digitali (chiamate "token") e la gestione di protocolli di finanza decentralizzata (DeFi), ma possono essere utilizzati anche in molti altri settori.
+
+> Un semplice esempio in cui si potrebbero usare gli smart contracts
+
+Gigino deve comprare una macchina da Mario.  
+Invece che andare dal notaio i 2 ragazzi potrebbero utilizzare uno smart contract che quando riceve la transazione di Gigino (con il pagamento della vettura), crea un contratto legale (la voltura) precompilato dai 2. Se invece la transazione non viene fatta entro 1 settimana lo smart contract verrà annullato e cancellato.
