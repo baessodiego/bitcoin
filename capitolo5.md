@@ -1,4 +1,4 @@
-# Tipi di blockchain
+# Tipi di blockchain e Smart Contracts
 
 ## Indice
 
